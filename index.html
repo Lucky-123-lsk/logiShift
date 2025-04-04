@@ -1,0 +1,696 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sustainable Logistics</title>
+
+    <style>
+        :root {
+            --primary-color: #2ecc71;
+            --secondary-color: #27ae60;
+            --dark-bg: #f0f8ff;
+            --heading-color: #006400;
+            --text-color: #000;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: var(--dark-bg);
+            color: var(--text-color);
+        }
+
+        header {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        header h1 {
+            color: #fff;
+            background-color: #006400;
+            font-size: 28px;
+            font-weight: bold;
+            padding: 0.5rem;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        .datetime-box {
+            font-size: 1.2rem;
+            color: #333;
+            margin-top: 0.5rem;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            background: var(--secondary-color);
+            padding: 1rem;
+            list-style: none;
+            gap: 1rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            display: block;
+            transition: background 0.3s;
+        }
+
+        nav ul li a:hover {
+            background: var(--primary-color);
+            border-radius: 5px;
+        }
+
+        main {
+            padding: 2rem;
+        }
+
+        h2, h3 {
+            color: var(--heading-color);
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: #333;
+            text-align: justify;
+        }
+
+        ul {
+            padding-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        img {
+            width: 100%; 
+            max-width: 600px;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+            display: block;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: var(--secondary-color);
+            color: white;
+            margin-top: 2rem;
+        }
+      .header-content {
+            display: flex;
+            align-items: center;
+        }
+
+        .header-content img {
+            max-width: 300px; 
+            height: auto;
+            margin-right: 15px; 
+            float: right;
+        }
+
+        .text-box {
+            flex: 1;         
+        }
+          #feedback, #materials-recycled {
+        background-color: #008080;
+        color: #F5F5DC; 
+        padding: 20px;
+        border-radius: 10px;
+        margin: 20px 0;
+    }
+
+    #feedback h2, #materials-recycled h2, 
+    #feedback h3, #materials-recycled h3, 
+    #feedback label, #materials-recycled label, 
+    #feedback p, #materials-recycled p {
+        color: #F5F5DC;
+    }
+
+    #feedback select, #materials-recycled select, 
+    #feedback textarea, #materials-recycled textarea, 
+    #feedback button, #materials-recycled button {
+        background-color: #F5F5DC; 
+        color: #008080;
+        border: none;
+        padding: 8px;
+        margin: 5px 0;
+    }
+
+    #feedback button, #materials-recycled button {
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    #feedback button:hover, #materials-recycled button:hover {
+        background-color: #A9A9A9; 
+    }
+           
+        </style>
+</head>
+<body>
+
+<header>
+    <h1>Transforming Logistics for a Sustainable and Efficient Future</h1>
+    <div class="header-content">
+        <img src="https://www.acg.edu/wp-content/uploads/2023/11/Sustainability-Certifications_featured_image-scaled.jpg" alt="Sustainable Logistics">
+        <div class="text-box">
+            <div class="datetime-box">
+                <p id="current-day">Loading...</p>
+                <p id="current-date-time">Loading...</p>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<nav>
+    <ul>
+        <li><a href="#introduction">Introduction  </a></li>
+        <li><a href="#key-concepts">Key Concepts</a></li>
+        <li><a href="#challenges">Challenges</a></li>
+        <li><a href="#solutions">Solutions </a></li>
+        <li><a href="#case-studies">Case Studies</a></li>
+        <li><a href="#future-trends">Future Trends</a></li>
+        <li><a href="#references">References</a></li>
+    </ul>
+</nav>
+
+<main>
+
+<!-- INTRODUCTION -->
+<section id="introduction">
+    <h2>Introduction</h2>
+     <style> 
+     .container
+    {
+    display: flex h1,h2,p,h3,h4,h5,h6,a;
+    justify-content: center;
+    align-items: center;
+    }
+    </style>
+
+     <div class="container">
+    <img src="https://www.corporatevision-news.com/wp-content/uploads/2022/02/Green-Logisitcs-1536x864.jpg" alt="Sustainable Logistics">
+    </div>
+
+    <p> <h2> What Is Sustainable Development ? </h2>
+     Sustainable development is development that meets the
+needs of the present without compromising the ability of
+future generations to meet their own needs.
+<h3> What is sustainable development in Logistics? </h3>
+<p> The logistics sector is a critical component of global trade and commerce, playing a pivotal role in the movement of goods and services. It encompasses a wide range of activities,
+including transportation, warehousing, inventory management, and packaging. However, despite its essential role in the economy, the logistics industry also significantly contributes to environmental degradation. This is primarily through greenhouse gas emissions from
+transportation, high energy consumption in warehouses, and substantial waste generation
+from packaging materials . As the urgency to address climate change intensifies,
+businesses and governments are increasingly focusing on sustainability. The logistics
+industry, with its substantial carbon footprint, is under particular scrutiny. In response to these
+environmental challenges, companies worldwide are adopting green logistics practices to
+mitigate their ecological impacts and promote sustainability . Green logistics involves
+the integration of environmentally friendly measures throughout the logistics chain, aiming
+to reduce carbon emissions, conserve energy, and minimize waste. This paper delves into the
+methods and benefits of green logistics, analysing its impact on corporate sustainability
+efforts. By exploring innovative practices such as the use of electric and hybrid vehicles,
+implementation of energy-efficient technologies in warehousing, adoption of sustainable
+packaging solutions, and enhancement of inventory management systems, we highlight how
+the logistics sector can significantly reduce its environmental footprint . Additionally,
+we discuss the role of reverse logistics in managing returns and recycling processes in an
+eco-friendly manner . Through a comprehensive analysis of industry data and case studies this page provides insights into the current trends and future directions of green logistics.
+We examine the challenges faced by companies in transitioning to sustainable logistics
+practices, including the high initial costs, technological barriers, and regulatory hurdles . Furthermore, we emphasize the importance of green logistics in achieving broader
+sustainability goals, such as reducing global carbon emissions, enhancing resource
+efficiency, and meeting consumer demand for environmentally responsible products .
+In conclusion, as the logistics sector evolves, the adoption of green logistics practices is not
+just a strategic advantage but a necessity for ensuring long-term sustainability. This paper
+aims to contribute to the understanding and implementation of green logistics, providing
+valuable information for businesses, policymakers, and stakeholders committed to fostering
+a more sustainable future.</p> </p>
+    <img src="https://tse4.mm.bing.net/th?id=OIP.CK3oqNm5g3hdBRkTaCO4LgHaFl&pid=Api" alt="Sustainable Logistics">
+    <p>
+        Logistics is the backbone of global trade and commerce, enabling the movement of goods from manufacturers to consumers across the world. However, traditional logistics operations are associated with significant environmental impacts, including greenhouse gas emissions, resource depletion, and waste generation. Sustainable logistics refers to the integration of environmentally responsible
+practices within the logistics and supply chain processes to reduce ecological
+impact. This includes strategies to lower carbon emissions, optimize resource
+use and improve operational efficiency throughout the supply chain from
+sourcing raw materials to delivering products. Since the logistics sector contributes significantly to global greenhouse gas
+emissions, adopting sustainable practices is essential for tackling climate
+change and meeting regulatory requirements.
+Key elements include energy-efficient transportation methods, route
+optimization to reduce fuel consumption and adopting sustainable packaging
+solutions to reduce waste.
+    </p>
+</section>
+
+<!-- KEY CONCEPTS -->
+<section id="key-concepts">
+    <h2>Key Concepts in Sustainable Logistics</h2>
+
+    <h3>1. Green Logistics</h3>
+    <img src="https://tse1.mm.bing.net/th?id=OIP.O9xCWw_cAwD55IUHCnhQFAHaE8&pid=Api" alt="Green Logistics">
+    <p>Green logistics focuses on reducing the environmental footprint of logistics operations.Green supply chain: a new norm
+Sustainable logistics starts with creating a green supply chain. This
+requires rethinking every step from the procurement of materials to
+the delivery of the final product. By prioritising environmentally
+friendly suppliers and introducing energy-efficient processes,
+companies can significantly reduce their carbon footprint.
+
+Utilising renewable energy
+Renewable energy is at the heart of this transformation. Logistics
+companies are increasingly investing in solar panels, wind turbines
+and other renewable energy sources to power their operations. This
+shift not only reduces dependence on fossil fuels, but also reduces
+greenhouse gas emissions and makes the entire supply chain more
+sustainable. It involves:</p>
+    <ul>
+        <li>Optimizing delivery routes to reduce fuel consumption</li>
+        <li>Using electric and hybrid vehicles for last-mile delivery</li>
+        <li>Minimizing packaging waste through recyclable materials</li>
+    </ul>
+</section>
+
+<!-- CHALLENGES -->
+<section id="challenges">
+    <h2>Challenges in Logistics Sustainability</h2>
+    
+    <style>
+    .image-row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px; /* space between images */
+      flex-wrap: wrap; /* allows wrapping on small screens */
+      padding: 20px;
+    }
+    .image-row img {
+      max-width: 45%; /* make them responsive */
+      height: auto;
+      border-radius: 10px; /* optional styling */
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* optional styling */
+    }
+  </style> <div class="image-row">
+    <img src="https://tse2.mm.bing.net/th?id=OIP.-0CdkxaiOkVQLFGp5Y0xhgHaEU&pid=Api" alt="Challenges in Logistics">
+    <img src="https://community.se.com/t5/image/serverpage/image-id/2940i6088AFF75C5A69A4/image-size/large?v=v2&px=999" alt="Challenges in Sustainable Logistics">
+  </div>
+    <ul>
+        <li>High initial costs of transition</li>
+        <li>Complex global supply chains</li>
+        <li>Fast delivery vs. sustainability conflict</li>
+    </ul>
+<p> <h4> Business Transportation Sustainability and Challenges </h4>
+Transportation has a crucial role in connecting markets, supplying needs, and
+driving economic growth. However, in today's business context, transportation is also
+a major cause of negative impacts on the environment and utilization of natural
+resources. In this section, we will discuss the impact of conventional transportation on
+the environment and resources, the increasing demand for transport as the economy
+grows, and the challenges businesses face in striking a balance between sustainability
+and operational needs.
+Conventional transportation, especially that powered by fossil fuels, has a
+serious impact on the environment. Emissions of greenhouse gases, such as carbon
+dioxide (CO2), from vehicles, contribute to global warming and devastating climate
+change. In addition, other pollutants such as nitrogen oxides (NOx) and dust particles
+from vehicle exhausts can cause air pollution which endangers human health and
+ecosystems. The use of fossil fuels also accelerates the exploitation of limited natural
+resources, such as oil. As the global economy grows, the demand for transportation is increasing. This
+increase occurred in both passenger and freight transport. The growth of international
+trade and urbanization accelerated the movement of goods and people. However, this
+increase in demand is often accompanied by increases in greenhouse gas emissions
+and air pollution, which can have negative consequences for air quality and the
+environment as a whole.
+Businesses are faced with complex challenges in maintaining a balance
+between sustainability and operational needs. First, they must meet growing customer
+demands without sacrificing efficiency and profitability. This often leads to more
+vehicle use and increased emissions. Second, businesses need to overcome the
+technological and cost barriers that sometimes remain obstacles to adopting more
+environmentally friendly transportation alternatives.
+In addition, regulatory uncertainty and policy changes can also affect business
+strategy. Efforts to shift to sustainable transport require investment and changes in
+infrastructure and operations. However, businesses need to overcome the challenge
+of matching investment return timeframes with long-term sustainability expectations.
+In facing this challenge, businesses need to adopt a holistic approach,
+considering the integration of the latest technology, route optimization, use of
+alternative fuels, and cross-sector cooperation. Awareness of the negative impacts of
+conventional transportation encourages businesses to become proactive agents of
+change, developing innovations to mitigate environmental and resource impacts
+while meeting customer needs and achieving long-term business sustainability.
+Meanwhile, the demand for sustainability increasingly dominates the view of
+modern business. Communities, customers, investors, and regulatory agencies are
+increasingly demanding that companies play an active role in reducing their
+environmental impact. To maintain balance, businesses need to embrace a new
+paradigm that combines economic growth with environmental responsibility. By
+prioritizing energy efficiency, using low-emission fuels, and better-managing
+logistics, businesses can reduce their impact on the environment.
+Technological developments are also important catalysts in addressing the
+challenges of sustainable business transportation. Innovations such as electric
+vehicles, automation in logistics, and advanced data analytics allow companies to
+optimize their operations effectively. In some cases, these technological innovations
+can even result in higher efficiencies than conventional practices.
+It is important to admit that changing the paradigm of business transportation
+is not an easy task. Technical challenges, initial investment costs, and uncertainty over
+results are some of the hurdles that must be overcome. However, companies that
+successfully integrate sustainable transport initiatives into their operations will reap
+significant long-term benefits. This includes reducing operational costs, increasing
+efficiency, a better corporate image in the eyes of consumers and stakeholders, as well
+as fulfilling social and environmental responsibilities.
+To achieve the goal of sustainability in business transportation, cross-sectoral
+collaboration and cooperation is very important. Governments, companies, research
+institutions, and communities need to work together to develop holistic solutions that
+balance the operational needs of businesses with broader environmental
+responsibilities.</p>
+</section>
+
+<!-- SOLUTIONS -->
+<section id="solutions">
+    <h2>Solutions and Best Practices</h2>
+     <p> In the context of sustainable development, the logistics sector is increasingly focusing on
+environmentally conscious solutions. Green Logistics Solutions aim to minimize the environmental footprint of transportation and warehousing processes while enhancing their
+efficiency. This section explores the key components and benefits of green logistics, which
+contribute to a more sustainable and eco-friendly future. By integrating innovative
+technologies, optimizing supply chain operations, and adopting renewable energy sources,
+green logistics solutions play a pivotal role in reducing emissions, conserving resources, and
+promoting corporate social responsibility.
+<h4> Transportation </h4>
+Transportation is one of the largest sources of carbon emissions in logistics. To address this,
+companies are investing in fuel-efficient vehicles, electric trucks, and alternative fuel sources
+. Electric trucks and vehicles offer a promising solution by significantly reducing
+greenhouse gas emissions compared to conventional diesel-powered trucks .
+Additionally, alternative fuels such as biodiesel, hydrogen, and natural gas are being explored
+to further mitigate environmental impacts . Optimizing routes using advanced software
+can also significantly reduce fuel consumption and emissions. For instance, UPS's ORION
+(On-Road Integrated Optimization and Navigation) system has saved millions of miles and
+gallons of fuel annually by calculating the most efficient routes for their delivery vehicles
+. Such systems take into account factors like traffic conditions, delivery schedules, and
+vehicle capacities to minimize travel distance and time, thereby reducing overall carbon
+emissions  </p>
+<img src="https://www.researchgate.net/publication/361959408/figure/fig1/AS:11431281242260444@1715433552608/Global-green-investment-and-carbon-emissions-The-bar-chart-represents-the-amount-of.tif" alt="Green Investment and Emissions Chart">
+
+
+
+    <ul>
+        <li>Investing in renewable energy for warehouses</li>
+        <li>AI-powered route optimization</li>
+        <li>Eco-friendly packaging materials</li>
+        <li>Establishing sustainable sourcing practices</li>
+    </ul>
+</section>
+
+<!-- CASE STUDIES -->
+<section id="case-studies">
+    <h2>Case Studies </h2>
+<p> Application of Green Logistics in the Transportation Business
+FedEx, a global logistics company known for its fast and reliable services, has
+been a pioneer in adopting green logistics practices. They realize that sustainable
+business growth must be balanced with environmental responsibility. FedEx makes
+green logistics a key commitment and integrated it into its operational strategy. FedEx
+takes a comprehensive approach to integrating green logistics practices. They invest
+in electric and hybrid vehicle fleets and implement sophisticated route management
+systems. This technology helps optimize delivery routes based on traffic and weather
+conditions, reducing travel time and fuel consumption.
+The implementation of green logistics brings positive results for FedEx.
+Optimizing routes and using environmentally friendly vehicles results in reduced
+operational and fuel costs. In addition, higher operational efficiency reduces delivery
+times and meets customer expectations. The application of green logistics also helps
+FedEx in reducing its environmental impact. The use of environmentally friendly
+vehicles contributes to reducing greenhouse gas emissions and air pollution. In
+addition, FedEx is committed to using more sustainable packaging and optimizing invehicle space to reduce waste and fuel consumption.
+In the journey of adopting green logistics, FedEx faced several challenges. The
+initial investment in an eco-friendly vehicle fleet and route management technology
+can be a financial drag. Moreover, creating awareness and understanding among
+employees and customers about the benefits of green logistics is a challenge that needs
+to be overcome. FedEx addresses these challenges with a sustainable approach. They
+allocate resources for investments in sustainable technologies and communicate
+effectively to customers about the environmental benefits of green logistics practices.
+Corporate leaders play a role in leading by example and ensuring that all levels of the
+organization are involved in this ongoing initiative.
+A FedEx case study shows that large companies can be successful in
+implementing green logistics. This comprehensive approach of integrating technology
+and sustainable practices has a positive impact on operational efficiency, cost
+reduction, and environmental impact reduction. While challenges exist, companies'
+commitment to sustainability and cross-sectoral collaboration are helping them
+overcome obstacles and build a more sustainable future.</p>
+    <img src="https://tse2.mm.bing.net/th?id=OIP.qPRMih_O2jnsXlDy1K9kcQHaFW&pid=Api" alt="Case Study Example">
+    <p>
+        Amazon has introduced thousands of electric delivery vans to reduce its carbon footprint and improve delivery efficiency.
+    </p>
+</section>
+
+<!-- FUTURE TRENDS -->
+<section id="future-trends">
+    <h2>Future Trends in Sustainable Logistics</h2>
+    <ul>
+        <li>AI and IoT-driven supply chain automation</li>
+        <li>Growth of hydrogen-powered transportation</li>
+        <li>Adoption of shared transport networks</li>
+    </ul>
+    <p> The future of logistics is being transformed by several key trends that focus on sustainability and efficiency. Here are some of the most significant trends shaping the industry:
+
+<h4> 1. Electrification of Fleets </h4> 
+<h5>Electric Vehicles (EVs) :</h5> Companies like UPS and FedEx are transitioning to electric delivery vans to reduce carbon emissions and operational costs.
+
+Alternative Fuels: Besides EVs, other alternative fuels such as hydrogen and e-methanol are gaining traction for longer routes.
+
+<h4>2. Sustainable Packaging </h4>
+<h5>Biodegradable Materials:</h5> The use of recyclable, biodegradable, and reusable packaging materials is on the rise to minimize waste.
+
+<h5>Modular Packaging:</h5> Modular, reusable packaging systems are reducing single-use plastics and minimizing unused space.
+
+<h4>3. Data-Driven Decision Making </h4>
+<h5>Big Data and Analytics:</h5> The integration of data analytics is optimizing routes, reducing empty miles, and improving load consolidation.
+
+<h5>AI and IoT:</h5> Technologies like AI and IoT are enhancing supply chain efficiency by optimizing demand forecasting, inventory management, and real-time tracking.
+
+<h4>4. Renewable Energy </h4>
+<h5>Solar and Wind Power:</h5> Logistics companies are investing in renewable energy sources for warehouses and distribution centers to reduce reliance on fossil fuels.
+
+<h5>Energy-Efficient Facilities: </h5>Energy-efficient technologies and advanced energy management systems are being implemented in warehouses.
+
+<h4>5. Collaboration and Circular Economy</h4>
+<h5>Partnerships: </h5>Collaboration between companies, suppliers, and competitors is fostering shared resources and technologies for sustainability.
+
+<h5>Circular Supply Chains:</h5> Emphasis on reusing materials and minimizing waste to lower carbon emissions and ecological footprints.
+
+<h4>6. Automation and Digitalization</h4>
+<h5>Automation Technologies:</h5> RPA and autonomous vehicles are streamlining logistics operations, reducing manual labor and errors.
+
+<h5>Digital Twins and IoT Sensors:</h5> Providing real-time insights to optimize operations and reduce emissions
+</section>
+<p> 
+<h2> Conclusion: </h2> 
+The path to the future
+The road to sustainable logistics is not finished and requires
+continuous innovation and commitment. By introducing
+environmentally friendly processes and technologies, the logistics
+industry can play a crucial role in building a more sustainable
+future. Whether through eco-friendly transport, renewable energy or
+green warehousing solutions, every effort contributes to reducing
+environmental impact and creating a cleaner, greener world.
+
+So the next time you’re tracking a parcel or marvelling at the
+efficiency of a well-functioning supply chain, think about the green
+revolution that’s happening behind the scenes. It’s no longer just
+about getting products from A to B, but also about preserving our
+planet for future generations. In the current business context, implementing sustainable transportation and
+green logistics has become imperative for companies committed to sustainability. The
+negative impact of conventional transportation on the environment and natural
+resources underscores the need for a paradigm shift in transportation management.
+By optimizing routes, using sustainable technologies, and reducing emissions,
+businesses can strike a balance between economic growth and environmental
+responsibility. Real case studies from companies like FedEx confirm that green logistics is not a concept per se, but can be implemented effectively on a larger scale.
+By adopting innovative technologies, intelligent route management, and eco-friendly
+vehicles, companies can reduce operational costs, increase efficiency and significantly
+reduce environmental impact. Despite challenges such as initial investment and
+changing habits, the success of companies like FedEx proves that collaboration,
+awareness, and changes in regulation can help overcome these barriers. Sustainable
+transportation and green logistics are not only a moral responsibility, but also a
+strategic opportunity for future businesses. By integrating sustainability initiatives
+into operations, benefiting from regulatory and institutional changes, and learning
+from real company case studies, businesses can achieve long-term sustainability while
+sustaining economic growth and supporting the environment.</p>
+
+<!-- REFERENCES -->
+<section id="references">
+    <h2>References</h2>
+    <p>Relevant references to industry reports and government policies.
+Al-Thani, H., Koç, M., Isaifan, R. J., & Bicer, Y. (2022). A Review of the Integrated
+Renewable Energy Systems for Sustainable Urban Mobility. Sustainability,
+14(17), 10517.
+Awan, U., Sroufe, R., & Bozan, K. (2022). Designing value chains for industry 4.0 and
+a circular economy: A review of the literature. Sustainability, 14(12), 7084.
+Balsalobre-Lorente, D., Abbas, J., He, C., Pilař, L., & Shah, S. A. R. (2023). Tourism,
+urbanization and natural resources rents matter for environmental
+sustainability: The leading role of AI and ICT on sustainable development goals
+in the digital era. Resources Policy, 82, 103445.
+Bamwesigye, D., & Hlavackova, P. (2019). Analysis of sustainable transport for smart
+cities. Sustainability, 11(7), 2140.
+Esmaeilian, B., Sarkis, J., Lewis, K., & Behdad, S. (2020). Blockchain for the future of
+sustainable supply chain management in Industry 4.0. Resources, Conservation
+and Recycling, 163, 105064.</p>
+</section>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect with Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h4 {
+            color: #333;
+        }
+        a {
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        h5 {
+            font-style: italic;
+            color: #555;
+            margin-top: 20px;
+        }
+        .names {
+            margin-top: 20px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #222;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h4>Connect with us at <a href="#">SOCIAL MEDIA PLATFORM</a></h4>
+        <h5>SOLUTION MAKERS - "IN SEARCH OF INNOVATION AND EXPLORER OVER PROBLEM"</h5>
+        <div class="names">
+            <p>Aryan Parihar</p>
+            <p>Naman Singh Kushwaha</p>
+            <p>Nisha Baghel</p>
+            <p>Meenakshi Paraye</p>
+        </div>
+    </div>
+</body>
+</html>
+
+
+</main>
+<!-- Feedback Section -->
+<section id="feedback">
+    <h2>Feedback</h2>
+    <label for="rating">Rate this Website:</label>
+    <select id="rating">
+        <option value="5">5 - Excellent</option>
+        <option value="4">4 - Good</option>
+        <option value="3">3 - Average</option>
+        <option value="2">2 - Below Average</option>
+        <option value="1">1 - Poor</option>
+    </select>
+    
+    <label for="feedback-text">Your Feedback:</label>
+    <textarea id="feedback-text" rows="4" cols="50" placeholder="Share your thoughts..."></textarea>
+    
+    <button onclick="submitFeedback()">Submit Feedback</button>
+
+    <p id="feedback-response"></p>
+</section>
+
+<!-- Materials Recycled Section -->
+<section id="materials-recycled">
+    
+    <h2>Materials That Can Be Recycled</h2>
+    <h3> How Surrounding Materials Can Help You In Sustainable development? </h3>
+    <label for="material-type">Select Material Type:</label>
+    <select id="material-type">
+        <option value="Plastic">Plastic</option>
+        <option value="Glass">Glass</option>
+        <option value="Metal">Metal</option>
+        <option value="Paper">Paper</option>
+        <option value="Electronics">Electronics</option>
+    </select>
+
+    <button onclick="showRecyclingInfo()">Check Recycling Info</button>
+
+    <p id="recycling-response"></p>
+</section>
+
+<script>
+    function submitFeedback() {
+        const rating = document.getElementById("rating").value;
+        const feedbackText = document.getElementById("feedback-text").value;
+        document.getElementById("feedback-response").textContent = 
+            `Thank you for your feedback! You rated us ${rating} star(s).`;
+    }
+
+    function showRecyclingInfo() {
+        const material = document.getElementById("material-type").value;
+        let message = "";
+
+        switch (material) {
+            case "Plastic":
+                message = "Plastic recycling reduces waste and conserves resources. Ensure it's clean before recycling.";
+                break;
+            case "Glass":
+                message = "Glass can be recycled multiple times without quality loss. Separate by color if required.";
+                break;
+            case "Metal":
+                message = "Metal recycling saves energy. Aluminum and steel are the most commonly recycled metals.";
+                break;
+            case "Paper":
+                message = "Recycling paper reduces deforestation. Avoid recycling contaminated paper.";
+                break;
+            case "Electronics":
+                message = "E-waste recycling prevents toxic substances from harming the environment. Dispose at e-waste centers.";
+                break;
+            default:
+                message = "Please select a valid material.";
+        }
+
+        document.getElementById("recycling-response").textContent = message;
+    }
+</script>
+
+
+<footer>
+    &copy; 2025 Sustainable Logistics. All rights reserved.
+</footer>
+
+<script>
+    function updateDateTime() {
+        const dayElement = document.getElementById('current-day');
+        const dateTimeElement = document.getElementById('current-date-time');
+
+        const now = new Date();
+        dayElement.textContent = now.toLocaleDateString('en-US', { weekday: 'long' });
+        dateTimeElement.textContent = now.toLocaleString('en-US', { hour12: false });
+    }
+
+    setInterval(updateDateTime, 1000);
+    updateDateTime();
+</script>
+
+</body>
+</html>
